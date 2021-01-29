@@ -5,8 +5,6 @@ use Engine\Controller;
 class Index extends Controller {
 	
 	public function actionIndex($data) {
-		if ($this->rk->request->isAjax() && $this->rk->request->has('foo')) return $this->actionOrder();
-		// print_r($this->model);
 		return $this->view->render('web/index', 'web/layout');
 	}
 	
@@ -45,6 +43,12 @@ class Index extends Controller {
 		$output['success'] = true;
 		
 		return json_encode($output);
+	}
+	
+	
+	public function actionFoo($data) {
+		echo 'actionFoo: ';
+		print_r($data);
 	}
 	
 }
