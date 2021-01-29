@@ -12,6 +12,6 @@ return array(
 	),
 	array(
 		'rule' => '.*',
-		'action' => 'page/error404'
+		'action' => 'index/error404'
 	)
 );
