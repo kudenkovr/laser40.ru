@@ -1,4 +1,7 @@
-images/*
+*thumb
 *_*
 core/config/config.php
 .htaccess
+
+assets/pricelist.js
+core/template/web/config.ini
